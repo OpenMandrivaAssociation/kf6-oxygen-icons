@@ -1,6 +1,6 @@
 %define major 5
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
-%define git 20230715
+%define git 20230722
 
 Summary:	Oxygen icon theme
 Name:		kf6-oxygen-icons
