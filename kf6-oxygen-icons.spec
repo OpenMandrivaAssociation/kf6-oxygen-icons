@@ -8,7 +8,7 @@ Version:	5.106.0
 Release:	%{?git:0.%{git}.}1
 License:	GPL
 Group:		Graphical desktop/KDE
-Url:		http://www.kde.org
+Url:		https://www.kde.org
 %if 0%{?git:1}
 Source0:	https://invent.kde.org/frameworks/oxygen-icons5/-/archive/master/oxygen-icons5-master.tar.bz2#/oxygen-icons-%{git}.tar.bz2
 %else
