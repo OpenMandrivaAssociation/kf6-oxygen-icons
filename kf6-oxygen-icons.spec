@@ -1,18 +1,18 @@
-%define major 5
+%define major 6
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
-%define git 20231103
+#define git 20231103
 
 Summary:	Oxygen icon theme
 Name:		kf6-oxygen-icons
-Version:	5.106.0
+Version:	6.1.0
 Release:	%{?git:0.%{git}.}1
 License:	GPL
 Group:		Graphical desktop/KDE
 Url:		https://www.kde.org
 %if 0%{?git:1}
-Source0:	https://invent.kde.org/frameworks/oxygen-icons5/-/archive/master/oxygen-icons5-master.tar.bz2#/oxygen-icons-%{git}.tar.bz2
+Source0:	https://invent.kde.org/frameworks/oxygen-icons/-/archive/master/oxygen-icons-master.tar.bz2#/oxygen-icons-%{git}.tar.bz2
 %else
-Source0:	http://download.kde.org/%{stable}/frameworks/%(echo %{version} |cut -d. -f1-2)/%{name}%{major}-%{version}.tar.xz
+Source0:	http://download.kde.org/%{stable}/oxygen-icons/oxygen-icons-%{version}.tar.xz
 %endif
 BuildRequires:	cmake
 BuildRequires:	cmake(ECM)
@@ -34,7 +34,7 @@ Oxygen icon theme. Compliant with FreeDesktop.org naming schema.
 #-----------------------------------------------------------------------------
 
 %prep
-%autosetup -p1 -n oxygen-icons5-%{?git:master}%{!?git:%{version}}
+%autosetup -p1 -n oxygen-icons-%{?git:master}%{!?git:%{version}}
 %cmake \
 	-DBUILD_QCH:BOOL=ON \
 	-DBUILD_WITH_QT6:BOOL=ON \
