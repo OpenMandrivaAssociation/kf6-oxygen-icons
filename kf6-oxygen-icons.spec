@@ -30,6 +30,7 @@ Oxygen icon theme. Compliant with FreeDesktop.org naming schema.
 %{_iconsdir}/oxygen/
 # This is needed as hicolor is the fallback for icons
 %{_datadir}/icons/hicolor/*/apps/*
+%{_datadir}/metainfo/org.kde.oxygenicon.metainfo.xml
 
 #-----------------------------------------------------------------------------
 
