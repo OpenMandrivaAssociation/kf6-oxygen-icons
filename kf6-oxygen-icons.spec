@@ -4,7 +4,7 @@
 
 Summary:	Oxygen icon theme
 Name:		kf6-oxygen-icons
-Version:	6.1.0
+Version:	6.32.0
 Release:	%{?git:0.%{git}.}1
 License:	GPL
 Group:		Graphical desktop/KDE
@@ -12,7 +12,7 @@ Url:		https://www.kde.org
 %if 0%{?git:1}
 Source0:	https://invent.kde.org/frameworks/oxygen-icons/-/archive/master/oxygen-icons-master.tar.bz2#/oxygen-icons-%{git}.tar.bz2
 %else
-Source0:	http://download.kde.org/%{stable}/oxygen-icons/oxygen-icons-%{version}.tar.xz
+Source0:	https://download.kde.org/%{stable}/frameworks/%(echo %{version} | cut -d. -f1-2)/oxygen-icons-%{version}.tar.xz
 %endif
 BuildRequires:	cmake
 BuildRequires:	cmake(ECM)
