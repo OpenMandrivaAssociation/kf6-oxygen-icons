@@ -50,20 +50,20 @@ Oxygen icon theme. Compliant with FreeDesktop.org naming schema.
 # We copy some missing icons from oxygen to hicolor
 for size in 16 32 48 64 128; do
     mkdir -p %{buildroot}/%{_datadir}/icons/hicolor/${size}x${size}/apps
-    cp %{buildroot}%{_kde5_iconsdir}/oxygen/base/${size}x${size}/apps/office-address-book.png %{buildroot}/%{_datadir}/icons/hicolor/${size}x${size}/apps
-    cp %{buildroot}%{_kde5_iconsdir}/oxygen/base/${size}x${size}/apps/krdc.png  %{buildroot}/%{_datadir}/icons/hicolor/${size}x${size}/apps
-    cp %{buildroot}%{_kde5_iconsdir}/oxygen/base/${size}x${size}/apps/akonadi.png  %{buildroot}/%{_datadir}/icons/hicolor/${size}x${size}/apps
-    cp %{buildroot}%{_kde5_iconsdir}/oxygen/base/${size}x${size}/apps/kaffeine.png  %{buildroot}/%{_datadir}/icons/hicolor/${size}x${size}/apps
-    cp %{buildroot}%{_kde5_iconsdir}/oxygen/base/${size}x${size}/apps/semn.png %{buildroot}/%{_datadir}/icons/hicolor/${size}x${size}/apps
-    cp %{buildroot}%{_kde5_iconsdir}/oxygen/base/${size}x${size}/apps/plasmagik.png %{buildroot}/%{_datadir}/icons/hicolor/${size}x${size}/apps
-    cp %{buildroot}%{_kde5_iconsdir}/oxygen/base/${size}x${size}/apps/ktip.png %{buildroot}/%{_datadir}/icons/hicolor/${size}x${size}/apps
-    cp %{buildroot}%{_kde5_iconsdir}/oxygen/base/${size}x${size}/apps/kthesaurus.png %{buildroot}/%{_datadir}/icons/hicolor/${size}x${size}/apps
-    cp %{buildroot}%{_kde5_iconsdir}/oxygen/base/${size}x${size}/apps/ksniffer.png %{buildroot}/%{_datadir}/icons/hicolor/${size}x${size}/apps
-    cp %{buildroot}%{_kde5_iconsdir}/oxygen/base/${size}x${size}/apps/korgac.png %{buildroot}/%{_datadir}/icons/hicolor/${size}x${size}/apps
-    cp %{buildroot}%{_kde5_iconsdir}/oxygen/base/${size}x${size}/apps/knewsticker.png %{buildroot}/%{_datadir}/icons/hicolor/${size}x${size}/apps
-    cp %{buildroot}%{_kde5_iconsdir}/oxygen/base/${size}x${size}/apps/klipper.png %{buildroot}/%{_datadir}/icons/hicolor/${size}x${size}/apps
-    cp %{buildroot}%{_kde5_iconsdir}/oxygen/base/${size}x${size}/apps/kjournal.png %{buildroot}/%{_datadir}/icons/hicolor/${size}x${size}/apps
-    cp %{buildroot}%{_kde5_iconsdir}/oxygen/base/${size}x${size}/apps/kivio.png %{buildroot}/%{_datadir}/icons/hicolor/${size}x${size}/apps
+    cp %{buildroot}%{_iconsdir}/oxygen/base/${size}x${size}/apps/office-address-book.png %{buildroot}/%{_datadir}/icons/hicolor/${size}x${size}/apps
+    cp %{buildroot}%{_iconsdir}/oxygen/base/${size}x${size}/apps/krdc.png  %{buildroot}/%{_datadir}/icons/hicolor/${size}x${size}/apps
+    cp %{buildroot}%{_iconsdir}/oxygen/base/${size}x${size}/apps/akonadi.png  %{buildroot}/%{_datadir}/icons/hicolor/${size}x${size}/apps
+    cp %{buildroot}%{_iconsdir}/oxygen/base/${size}x${size}/apps/kaffeine.png  %{buildroot}/%{_datadir}/icons/hicolor/${size}x${size}/apps
+    cp %{buildroot}%{_iconsdir}/oxygen/base/${size}x${size}/apps/semn.png %{buildroot}/%{_datadir}/icons/hicolor/${size}x${size}/apps
+    cp %{buildroot}%{_iconsdir}/oxygen/base/${size}x${size}/apps/plasmagik.png %{buildroot}/%{_datadir}/icons/hicolor/${size}x${size}/apps
+    cp %{buildroot}%{_iconsdir}/oxygen/base/${size}x${size}/apps/ktip.png %{buildroot}/%{_datadir}/icons/hicolor/${size}x${size}/apps
+    cp %{buildroot}%{_iconsdir}/oxygen/base/${size}x${size}/apps/kthesaurus.png %{buildroot}/%{_datadir}/icons/hicolor/${size}x${size}/apps
+    cp %{buildroot}%{_iconsdir}/oxygen/base/${size}x${size}/apps/ksniffer.png %{buildroot}/%{_datadir}/icons/hicolor/${size}x${size}/apps
+    cp %{buildroot}%{_iconsdir}/oxygen/base/${size}x${size}/apps/korgac.png %{buildroot}/%{_datadir}/icons/hicolor/${size}x${size}/apps
+    cp %{buildroot}%{_iconsdir}/oxygen/base/${size}x${size}/apps/knewsticker.png %{buildroot}/%{_datadir}/icons/hicolor/${size}x${size}/apps
+    cp %{buildroot}%{_iconsdir}/oxygen/base/${size}x${size}/apps/klipper.png %{buildroot}/%{_datadir}/icons/hicolor/${size}x${size}/apps
+    cp %{buildroot}%{_iconsdir}/oxygen/base/${size}x${size}/apps/kjournal.png %{buildroot}/%{_datadir}/icons/hicolor/${size}x${size}/apps
+    cp %{buildroot}%{_iconsdir}/oxygen/base/${size}x${size}/apps/kivio.png %{buildroot}/%{_datadir}/icons/hicolor/${size}x${size}/apps
 done
 
 # automatic gtk icon cache update on rpm installs/removals
